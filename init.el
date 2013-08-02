@@ -29,3 +29,8 @@
 
 ;; Load modules we want to have at the start
 (require 'magit)
+
+(require 'rainbow-delimiters)
+(global-rainbow-delimiters-mode)
+
+(put 'dired-find-alternate-file 'disabled nil)
