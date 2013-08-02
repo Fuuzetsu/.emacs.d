@@ -44,6 +44,9 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
+;; Setup key bindings
+(require 'key-bindings)
+
 ;; Emacs server
 (require 'server)
 (unless (server-running-p)
