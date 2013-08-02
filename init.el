@@ -34,3 +34,16 @@
 (global-rainbow-delimiters-mode)
 
 (put 'dired-find-alternate-file 'disabled nil)
+
+;; Make sure we have our defaults
+(require 'defaults)
+
+;; Run at full power please
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'narrow-to-region 'disabled nil)
+
+;; Emacs server
+(require 'server)
+(unless (server-running-p)
+  (server-start))
