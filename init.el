@@ -23,3 +23,9 @@
 (dolist (project (directory-files site-lisp-dir t "\\w+"))
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
+
+;; Make backups of files, even when they're in version control
+(setq vc-make-backup-files t)
+
+;; Load modules we want to have at the start
+(require 'magit)
