@@ -16,3 +16,9 @@
 [submodule "site-lisp/ido-vertical-mode"]
 	path = site-lisp/ido-vertical-mode
 	url = git@github.com:rson/ido-vertical-mode.el.git
+[submodule "site-lisp/paredit"]
+	path = site-lisp/paredit
+	url = http://mumble.net/~campbell/git/paredit.git/
+[submodule "site-lisp/s.el"]
+	path = site-lisp/s.el
+	url = git@github.com:magnars/s.el.git

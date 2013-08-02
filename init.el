@@ -38,6 +38,7 @@
 
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
+(require 'setup-paredit)
 
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
