@@ -4,3 +4,15 @@
 [submodule "site-lisp/rainbow-delimiters"]
 	path = site-lisp/rainbow-delimiters
 	url = git@github.com:jlr/rainbow-delimiters.git
+[submodule "site-lisp/flx"]
+	path = site-lisp/flx
+	url = git@github.com:lewang/flx.git
+[submodule "site-lisp/ido-ubiquitous"]
+	path = site-lisp/ido-ubiquitous
+	url = git@github.com:DarwinAwardWinner/ido-ubiquitous.git
+[submodule "site-lisp/dash.el"]
+	path = site-lisp/dash.el
+	url = git@github.com:magnars/dash.el.git
+[submodule "site-lisp/ido-vertical-mode"]
+	path = site-lisp/ido-vertical-mode
+	url = git@github.com:rson/ido-vertical-mode.el.git

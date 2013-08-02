@@ -36,6 +36,9 @@
 ;; Make sure we have our defaults
 (require 'defaults)
 
+;; Setup extensions
+(eval-after-load 'ido '(require 'setup-ido))
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
