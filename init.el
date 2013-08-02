@@ -1,0 +1,1 @@
+;; Fūzetsu's init file
