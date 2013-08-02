@@ -33,8 +33,6 @@
 (require 'rainbow-delimiters)
 (global-rainbow-delimiters-mode)
 
-(put 'dired-find-alternate-file 'disabled nil)
-
 ;; Make sure we have our defaults
 (require 'defaults)
 

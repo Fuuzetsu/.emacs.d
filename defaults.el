@@ -70,4 +70,7 @@
 ;; that you can always see what's happening.
 (setq eval-expression-print-level nil)
 
+;; Enable 'a' in dired
+(put 'dired-find-alternate-file 'disabled nil)
+
 (provide 'defaults)
