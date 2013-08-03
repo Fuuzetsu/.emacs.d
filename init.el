@@ -59,6 +59,7 @@
 (eval-after-load 'magit '(require 'setup-magit))
 (require 'setup-paredit)
 (require 'setup-hippie)
+(require 'setup-yasnippet)
 
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
