@@ -86,6 +86,7 @@
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-whitespace-mode)
+(require 'setup-erc)
 (require 'setup-znc)
 
 
