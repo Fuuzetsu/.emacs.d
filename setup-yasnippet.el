@@ -1,7 +1,8 @@
 (require 'yasnippet)
 
 ;; Snippet directories
-(setq yas-snippet-dirs '("~/.emacs.d/snippets" "~/.emacs.d/site-lisp/yasnippet/snippets"))
+(setq yas-snippet-dirs '("~/.emacs.d/snippets"
+                         "~/.emacs.d/site-lisp/yasnippet/snippets"))
 (yas-global-mode 1)
 
 ;; Include snippets for stuff
