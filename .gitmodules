@@ -22,3 +22,9 @@
 [submodule "site-lisp/s.el"]
 	path = site-lisp/s.el
 	url = git@github.com:magnars/s.el.git
+[submodule "themes/zenburn-emacs"]
+	path = themes/zenburn-emacs
+	url = git@github.com:bbatsov/zenburn-emacs.git
+[submodule "themes/solarized-emacs"]
+	path = themes/solarized-emacs
+	url = git@github.com:bbatsov/solarized-emacs.git

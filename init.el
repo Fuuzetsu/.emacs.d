@@ -1,4 +1,13 @@
 ;; Fūzetsu's init file
+;; A lot of it is ‘borrowed’ from https://github.com/magnars/.emacs.d
+
+;; Turn off mouse interface early in startup to avoid momentary display
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
+;; No splash screen please ... jeez
+(setq inhibit-startup-message t)
 
 ;; Create the backup files in ~/.saves
 (setq backup-directory-alist '(("." . "~/.saves")))
@@ -18,6 +27,9 @@
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file)
+
+;; Set up appearance
+(require 'appearance)
 
 ;; Add external projects to load path
 (dolist (project (directory-files site-lisp-dir t "\\w+"))
