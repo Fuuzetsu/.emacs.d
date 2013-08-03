@@ -63,6 +63,7 @@
 (require 'setup-yasnippet)
 (require 'setup-perspective)
 (require 'setup-ffip)
+(require 'setup-whitespace-mode)
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
