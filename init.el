@@ -62,6 +62,7 @@
 (require 'setup-hippie)
 (require 'setup-yasnippet)
 (require 'setup-perspective)
+(require 'setup-ffip)
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
