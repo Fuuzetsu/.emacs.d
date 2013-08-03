@@ -28,8 +28,6 @@
 (setq vc-make-backup-files t)
 
 ;; Load modules we want to have at the start
-(require 'magit)
-
 (require 'rainbow-delimiters)
 (global-rainbow-delimiters-mode)
 
@@ -38,6 +36,7 @@
 
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
+(eval-after-load 'magit '(require 'setup-magit))
 (require 'setup-paredit)
 
 ;; Run at full power please
