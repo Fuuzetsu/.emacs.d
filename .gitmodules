@@ -112,3 +112,9 @@
 [submodule "site-lisp/elisp-slime-nav"]
 	path = site-lisp/elisp-slime-nav
 	url = git@github.com:purcell/elisp-slime-nav.git
+[submodule "site-lisp/auto-complete"]
+	path = site-lisp/auto-complete
+	url = git@github.com:auto-complete/auto-complete.git
+[submodule "site-lisp/popup-el"]
+	path = site-lisp/popup-el
+	url = git@github.com:auto-complete/popup-el.git
