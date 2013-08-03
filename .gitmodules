@@ -55,3 +55,27 @@
 [submodule "site-lisp/flycheck"]
 	path = site-lisp/flycheck
 	url = git@github.com:lunaryorn/flycheck.git
+[submodule "site-lisp/yaml-mode"]
+	path = site-lisp/yaml-mode
+	url = git@github.com:yoshiki/yaml-mode.git
+[submodule "site-lisp/restclient-mode"]
+	path = site-lisp/restclient-mode
+	url = git@github.com:pashky/restclient.el.git
+[submodule "site-lisp/cucumber.el"]
+	path = site-lisp/cucumber.el
+	url = git@github.com:michaelklishin/cucumber.el.git
+[submodule "site-lisp/jade-mode"]
+	path = site-lisp/jade-mode
+	url = git@github.com:brianc/jade-mode.git
+[submodule "site-lisp/rhtml"]
+	path = site-lisp/rhtml
+	url = git@github.com:eschulte/rhtml.git
+[submodule "site-lisp/clojure-mode"]
+	path = site-lisp/clojure-mode
+	url = git@github.com:clojure-emacs/clojure-mode.git
+[submodule "site-lisp/js2-mode"]
+	path = site-lisp/js2-mode
+	url = git@github.com:mooz/js2-mode.git
+[submodule "site-lisp/apache-mode"]
+	path = site-lisp/apache-mode
+	url = git@github.com:emacsmirror/apache-mode.git

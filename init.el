@@ -78,6 +78,9 @@
 ;; Load stuff on demand
 (autoload 'flycheck-mode "setup-flycheck" nil t)
 
+;; Map files to modes
+(require 'mode-mappings)
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
