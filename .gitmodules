@@ -82,3 +82,6 @@
 [submodule "site-lisp/highlight-escape-sequences"]
 	path = site-lisp/highlight-escape-sequences
 	url = git@github.com:dgutov/highlight-escape-sequences.git
+[submodule "site-lisp/visual-regexp.el"]
+	path = site-lisp/visual-regexp.el
+	url = git@github.com:benma/visual-regexp.el.git

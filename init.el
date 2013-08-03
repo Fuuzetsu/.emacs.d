@@ -86,6 +86,11 @@
 (hes-mode)
 (put 'font-lock-regexp-grouping-backslash 'face-alias 'font-lock-builtin-face)
 
+;; Visual regexp
+(require 'visual-regexp)
+(define-key global-map (kbd "M-&") 'vr/query-replace)
+(define-key global-map (kbd "M-/") 'vr/replace)
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
