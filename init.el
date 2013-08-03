@@ -63,6 +63,15 @@
 (require 'setup-yasnippet)
 (require 'setup-perspective)
 
+;; Default setup of smartparens
+(require 'smartparens-config)
+(setq sp-autoescape-string-quote nil)
+(--each '(css-mode-hook
+          restclient-mode-hook
+          js-mode-hook
+          markdown-mode)
+  (add-hook it 'turn-on-smartparens-mode))
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
