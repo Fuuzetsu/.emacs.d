@@ -49,3 +49,6 @@
 [submodule "site-lisp/find-file-in-project"]
 	path = site-lisp/find-file-in-project
 	url = git@github.com:technomancy/find-file-in-project.git
+[submodule "site-lisp/markdown-mode"]
+	path = site-lisp/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git

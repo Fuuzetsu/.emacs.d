@@ -72,6 +72,9 @@
           markdown-mode)
   (add-hook it 'turn-on-smartparens-mode))
 
+;; Language specific setup files
+(eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
