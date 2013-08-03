@@ -79,3 +79,6 @@
 [submodule "site-lisp/apache-mode"]
 	path = site-lisp/apache-mode
 	url = git@github.com:emacsmirror/apache-mode.git
+[submodule "site-lisp/highlight-escape-sequences"]
+	path = site-lisp/highlight-escape-sequences
+	url = git@github.com:dgutov/highlight-escape-sequences.git
