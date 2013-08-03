@@ -1,3 +1,8 @@
+;; Completion that uses many different methods to find options.
+(global-set-key (kbd "C-.") 'hippie-expand-no-case-fold)
+(global-set-key (kbd "C-:") 'hippie-expand-lines)
+(global-set-key (kbd "C-,") 'completion-at-point)
+
 ;; Transpose stuff with M-t
 (global-unset-key (kbd "M-t")) ;; which used to be transpose-words
 (global-set-key (kbd "M-t l") 'transpose-lines)

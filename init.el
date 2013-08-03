@@ -58,6 +58,7 @@
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
 (require 'setup-paredit)
+(require 'setup-hippie)
 
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
