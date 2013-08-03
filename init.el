@@ -23,10 +23,19 @@
 (setq ghc-mod-elisp-dir
       (expand-file-name "ghc-mod/elisp" site-lisp-dir))
 
+(setq agda-mode-dir
+      (let ((dir (sort
+                  (file-expand-wildcards "~/.cabal/share/Agda*/emacs-mode")
+                  'string<))) ;; newest version you can find
+        (if dir
+            (expand-file-name (car dir))
+          (progn (warn "Agda not found!") nil))))
+
 ;; Load path
 (add-to-list 'load-path user-emacs-directory) ;; top level
 (add-to-list 'load-path site-lisp-dir) ;; site-lisp, for local packages
-(add-to-list 'load-path ghc-mod-elisp-dir) ;; ghc-mod/elisp, for ghc-mod files
+(add-to-list 'load-path ghc-mod-elisp-dir)
+(add-to-list 'load-path agda-mode-dir)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -60,6 +69,14 @@
 (setq guide-key/recursive-key-sequence-flag t)
 (setq guide-key/popup-window-position 'bottom)
 
+;; Functions (load all files in defuns-dir)
+;; load these faster so that we can use the during setup
+(setq defuns-dir (expand-file-name "defuns" user-emacs-directory))
+(dolist (file (directory-files defuns-dir t "\\w+"))
+  (when (file-regular-p file)
+    (load file)))
+
+
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'magit '(require 'setup-magit))
@@ -69,6 +86,8 @@
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-whitespace-mode)
+
+(when agda-mode-dir (require 'setup-agda))
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
@@ -99,12 +118,6 @@
 (require 'visual-regexp)
 (define-key global-map (kbd "M-&") 'vr/query-replace)
 (define-key global-map (kbd "M-/") 'vr/replace)
-
-;; Functions (load all files in defuns-dir)
-(setq defuns-dir (expand-file-name "defuns" user-emacs-directory))
-(dolist (file (directory-files defuns-dir t "\\w+"))
-  (when (file-regular-p file)
-    (load file)))
 
 ;; Make sure we have all the nice stuff loaded
 (require 'expand-region)

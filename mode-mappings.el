@@ -3,6 +3,10 @@
 (add-to-list 'auto-mode-alist '("\\.lhs$" . literate-haskell-mode))
 (add-to-list 'auto-mode-alist '("\\.hs$" . haskell-mode))
 
+;; Agda
+(autoload 'agda2-mode "agda2-mode")
+(add-to-list 'auto-mode-alist '("\\.[l]?agda$" . agda2-mode))
+
 ;; YAML
 (autoload 'yaml-mode "yaml-mode")
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
