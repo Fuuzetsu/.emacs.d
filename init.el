@@ -75,6 +75,9 @@
 ;; Language specific setup files
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 
+;; Load stuff on demand
+(autoload 'flycheck-mode "setup-flycheck" nil t)
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
