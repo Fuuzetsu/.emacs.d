@@ -85,3 +85,24 @@
 [submodule "site-lisp/visual-regexp.el"]
 	path = site-lisp/visual-regexp.el
 	url = git@github.com:benma/visual-regexp.el.git
+[submodule "site-lisp/expand-region.el"]
+	path = site-lisp/expand-region.el
+	url = git@github.com:magnars/expand-region.el.git
+[submodule "site-lisp/multiple-cursors.el"]
+	path = site-lisp/multiple-cursors.el
+	url = git@github.com:magnars/multiple-cursors.el.git
+[submodule "site-lisp/jump-char"]
+	path = site-lisp/jump-char
+	url = git@github.com:lewang/jump-char.git
+[submodule "site-lisp/Emacs-wgrep"]
+	path = site-lisp/Emacs-wgrep
+	url = git@github.com:mhayashi1120/Emacs-wgrep.git
+[submodule "site-lisp/smart-forward.el"]
+	path = site-lisp/smart-forward.el
+	url = git@github.com:magnars/smart-forward.el.git
+[submodule "site-lisp/change-inner.el"]
+	path = site-lisp/change-inner.el
+	url = git@github.com:magnars/change-inner.el.git
+[submodule "site-lisp/multifiles.el"]
+	path = site-lisp/multifiles.el
+	url = git@github.com:magnars/multifiles.el.git

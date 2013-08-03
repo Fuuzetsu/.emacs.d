@@ -97,6 +97,17 @@
   (when (file-regular-p file)
     (load file)))
 
+;; Make sure we have all the nice stuff loaded
+(require 'expand-region)
+(require 'multiple-cursors)
+(require 'delsel)
+(require 'jump-char)
+(require 'eproject)
+(require 'wgrep)
+(require 'smart-forward)
+(require 'change-inner)
+(require 'multifiles)
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
