@@ -60,6 +60,7 @@
 (require 'setup-paredit)
 (require 'setup-hippie)
 (require 'setup-yasnippet)
+(require 'setup-perspective)
 
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
