@@ -9,6 +9,7 @@
 
 ;; Experimental multiple-cursors
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C-S-c a") 'mc/mark-all-like-this)
 (global-set-key (kbd "C-S-c C-p") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-S-c C-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-S-c C-e") 'mc/edit-ends-of-lines)
@@ -109,7 +110,7 @@
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
 
 ;; Jump from file to containing directory
-(global-set-key (kbd "C-x C-j") 'dired-jump) 
+(global-set-key (kbd "C-x C-j") 'dired-jump)
 (autoload 'dired-jump "dired")
 (global-set-key (kbd "C-x M-j") (λ (dired-jump 1)))
 
