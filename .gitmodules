@@ -43,3 +43,9 @@
 [submodule "site-lisp/smartparens"]
 	path = site-lisp/smartparens
 	url = git@github.com:Fuco1/smartparens.git
+[submodule "site-lisp/eproject"]
+	path = site-lisp/eproject
+	url = git@github.com:jrockway/eproject.git
+[submodule "site-lisp/find-file-in-project"]
+	path = site-lisp/find-file-in-project
+	url = git@github.com:technomancy/find-file-in-project.git
