@@ -4,3 +4,4 @@
 \#*
 *.elc
 /.ercsettings.el
+/ac-comphist.dat
