@@ -28,3 +28,9 @@
 [submodule "themes/solarized-emacs"]
 	path = themes/solarized-emacs
 	url = git@github.com:bbatsov/solarized-emacs.git
+[submodule "site-lisp/popwin-el"]
+	path = site-lisp/popwin-el
+	url = git@github.com:m2ym/popwin-el.git
+[submodule "site-lisp/guide-key"]
+	path = site-lisp/guide-key
+	url = git@github.com:kbkbkbkb1/guide-key.git
