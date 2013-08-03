@@ -86,6 +86,8 @@
 (require 'setup-perspective)
 (require 'setup-ffip)
 (require 'setup-whitespace-mode)
+(require 'setup-znc)
+
 
 (when agda-mode-dir (require 'setup-agda))
 
@@ -104,7 +106,6 @@
 
 ;; Load stuff on demand
 (autoload 'flycheck-mode "setup-flycheck" nil t)
-(autoload 'auto-complete-mode "auto-complete" nil t)
 
 ;; Map files to modes
 (require 'mode-mappings)

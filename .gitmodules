@@ -124,3 +124,6 @@
 [submodule "site-lisp/ghc-mod"]
 	path = site-lisp/ghc-mod
 	url = git@github.com:kazu-yamamoto/ghc-mod.git
+[submodule "site-lisp/ZNC.el"]
+	path = site-lisp/ZNC.el
+	url = git@github.com:sshirokov/ZNC.el.git
