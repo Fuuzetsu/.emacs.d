@@ -108,6 +108,10 @@
 ;; Load stuff on demand
 (autoload 'flycheck-mode "setup-flycheck" nil t)
 
+;; Auto-completion is sick!
+(require 'auto-complete)
+(global-auto-complete-mode t)
+
 ;; Map files to modes
 (require 'mode-mappings)
 
