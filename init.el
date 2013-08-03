@@ -108,6 +108,10 @@
 (require 'change-inner)
 (require 'multifiles)
 
+;; Smart M-x is smart
+(require 'smex)
+(smex-initialize)
+
 ;; Run at full power please
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
