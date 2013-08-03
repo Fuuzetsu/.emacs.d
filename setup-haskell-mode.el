@@ -1,13 +1,13 @@
 ;; haskell-mode setup
 
 (require 'haskell-mode-autoloads)
+(require 'ghc)
 
 (add-to-list 'Info-default-directory-list user-emacs-directory)
 
 (add-hook 'haskell-mode-hook (lambda ()
-                               ;(ghc-init)
-                               ;(flymake-mode)
-                               ;(flyspell-mode -1)
+                               (ghc-init)
+                               (flycheck-mode)
                                (turn-on-haskell-indentation)))
 
 ;;(setq haskell-process-path-ghci "~/ghc/bin/ghci")

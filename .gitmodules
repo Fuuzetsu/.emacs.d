@@ -121,3 +121,6 @@
 [submodule "site-lisp/haskell-mode"]
 	path = site-lisp/haskell-mode
 	url = git@github.com:haskell/haskell-mode.git
+[submodule "site-lisp/ghc-mod"]
+	path = site-lisp/ghc-mod
+	url = git@github.com:kazu-yamamoto/ghc-mod.git

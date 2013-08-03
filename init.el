@@ -20,9 +20,13 @@
 (setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
 
+(setq ghc-mod-elisp-dir
+      (expand-file-name "ghc-mod/elisp" site-lisp-dir))
+
 ;; Load path
 (add-to-list 'load-path user-emacs-directory) ;; top level
 (add-to-list 'load-path site-lisp-dir) ;; site-lisp, for local packages
+(add-to-list 'load-path ghc-mod-elisp-dir) ;; ghc-mod/elisp, for ghc-mod files
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
