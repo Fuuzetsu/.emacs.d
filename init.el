@@ -76,6 +76,7 @@
 
 ;; Language specific setup files
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
+(eval-after-load 'haskell-mode '(require 'setup-haskell-mode))
 
 ;; Load stuff on demand
 (autoload 'flycheck-mode "setup-flycheck" nil t)
@@ -132,4 +133,3 @@
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
-
