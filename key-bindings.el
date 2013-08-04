@@ -174,4 +174,11 @@
 (define-key flyspell-mode-map (kbd "C-c s .")
   'flyspell-auto-correct-word)
 
+;; perspective bindings
+(require 'perspective)
+(global-set-key (kbd "C-c p h") (λ (persp-switch "haddock")))
+(global-set-key (kbd "C-c p c") (λ (persp-switch "config")))
+(global-set-key (kbd "C-c p e") (λ (persp-switch "erc")))
+(global-set-key (kbd "C-c p b") (λ (persp-switch "blog")))
+
 (provide 'key-bindings)
