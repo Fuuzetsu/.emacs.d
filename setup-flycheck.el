@@ -33,4 +33,34 @@ up before you execute another command."
   (flycheck-clear-idle-change-timer)
   (flycheck-buffer-automatically 'idle-change))
 
+
+;; use checker with -package ghc if we're hacking on Haddock
+(flycheck-define-checker haskell-hdevtools-haddock
+  "A Haskell syntax and type checker for Haddock.
+
+See URL `http://www.haskell.org/ghc/'."
+  :command ("haddockcheck" source-inplace)
+  :error-patterns
+  ((warning line-start (file-name) ":" line ":" column ":"
+            (or " " "\n    ") "Warning:" (optional "\n")
+            (one-or-more " ")
+            (message (one-or-more not-newline)
+                     (zero-or-more "\n"
+                                   (one-or-more " ")
+                                   (one-or-more not-newline)))
+            line-end)
+   (error line-start (file-name) ":" line ":" column ":"
+          (or (message (one-or-more not-newline))
+              (and "\n" (one-or-more " ")
+                   (message (one-or-more not-newline)
+                            (zero-or-more "\n"
+                                          (one-or-more " ")
+                                          (one-or-more not-newline)))))
+          line-end))
+  :modes haskell-mode
+  :next-checkers ((warnings-only . haskell-hlint)))
+
+(add-to-list 'flycheck-checkers 'haskell-hdevtools-haddock)
+
+
 (provide 'setup-flycheck)
