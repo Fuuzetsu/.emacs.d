@@ -127,3 +127,6 @@
 [submodule "site-lisp/ZNC.el"]
 	path = site-lisp/ZNC.el
 	url = git@github.com:sshirokov/ZNC.el.git
+[submodule "site-lisp/smooth-scrolling"]
+	path = site-lisp/smooth-scrolling
+	url = git@github.com:aspiers/smooth-scrolling.git

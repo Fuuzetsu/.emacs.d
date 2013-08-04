@@ -48,6 +48,10 @@
 ;; Easily navigate sillycased words
 (global-subword-mode 1)
 
+;; Keep cursor away from edges when scrolling up/down
+(require 'smooth-scrolling)
+(setq smooth-scroll-margin 5)
+
 ;; Allow recursive minibuffers
 (setq enable-recursive-minibuffers t)
 
