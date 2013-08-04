@@ -3,6 +3,8 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        org-beginning-of-line
+        org-self-insert-command
         paredit-forward-delete
         paredit-forward-kill-word
         repeat
