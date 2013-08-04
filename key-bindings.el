@@ -154,5 +154,7 @@
 (define-key haskell-mode-map (kbd "C-c h t") 'haskell-insert-type)
 (define-key haskell-mode-map (kbd "C-c h i") 'haskell-insert-type-infix)
 
+;; Use ibuffer instead of list-buffers
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (provide 'key-bindings)
