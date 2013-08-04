@@ -19,7 +19,8 @@
 
 (add-hook 'inferior-haskell-mode-hook (lambda ()
                                         (whitespace-mode -1)
-                                        (disable-paredit-mode)))
+                                        (disable-paredit-mode)
+                                        (turn-off-show-smartparens-mode)))
 
 (defun haskell-insert-type ()
   "Insert the type of the function on the previous line.
