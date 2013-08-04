@@ -149,5 +149,9 @@
 (define-key occur-mode-map (kbd "n") 'next-line)
 (define-key occur-mode-map (kbd "p") 'previous-line)
 
+;; Some custom haskell-mode bindings
+(define-key haskell-mode-map (kbd "C-c h t") 'haskell-insert-type)
+(define-key haskell-mode-map (kbd "C-c h i") 'haskell-insert-type-infix)
+
 
 (provide 'key-bindings)

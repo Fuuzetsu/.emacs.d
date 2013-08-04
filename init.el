@@ -1,4 +1,4 @@
-;; Fūzetsu's init file
+;;; init.el --- Fūzetsu's init file
 ;; A lot of it is ‘borrowed’ from https://github.com/magnars/.emacs.d
 
 ;; Turn off mouse interface early in startup to avoid momentary display
@@ -63,7 +63,7 @@
 (require 'guide-key)
 (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v"
                                      "C-x 8" "M-g" "C-x x"
-                                     "C-S-c"))
+                                     "C-S-c" "C-c"))
 (guide-key-mode 1)
 (setq guide-key/highlight-command-regexp "magit")
 (setq guide-key/recursive-key-sequence-flag t)
@@ -157,3 +157,7 @@
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
+
+(provide 'init)
+
+;;; init.el ends here

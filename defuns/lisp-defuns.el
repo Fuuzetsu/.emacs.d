@@ -9,3 +9,8 @@
              (current-buffer))
     (error (message "Invalid expression")
            (insert (current-kill 0)))))
+
+(defun yank-peek ()
+  (with-temp-buffer
+    (yank)
+    (buffer-string)))
