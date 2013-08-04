@@ -35,11 +35,12 @@ up before you execute another command."
 
 
 ;; use checker with -package ghc if we're hacking on Haddock
-(flycheck-define-checker haskell-hdevtools-haddock
+(flycheck-define-checker haskell-ghc-haddock
   "A Haskell syntax and type checker for Haddock.
 
 See URL `http://www.haskell.org/ghc/'."
-  :command ("haddockcheck" source-inplace)
+  :command ("ghc" "-isrc" "-ivendor/attoparsec-0.10.4.0"
+            "-packageghc" source-inplace)
   :error-patterns
   ((warning line-start (file-name) ":" line ":" column ":"
             (or " " "\n    ") "Warning:" (optional "\n")
@@ -60,7 +61,7 @@ See URL `http://www.haskell.org/ghc/'."
   :modes haskell-mode
   :next-checkers ((warnings-only . haskell-hlint)))
 
-(add-to-list 'flycheck-checkers 'haskell-hdevtools-haddock)
+(add-to-list 'flycheck-checkers 'haskell-ghc-haddock)
 
 
 (provide 'setup-flycheck)
