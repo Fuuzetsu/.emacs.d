@@ -7,6 +7,9 @@
 (autoload 'agda2-mode "agda2-mode")
 (add-to-list 'auto-mode-alist '("\\.[l]?agda$" . agda2-mode))
 
+;; zsh/bash
+(add-to-list 'auto-mode-alist '("\\.[z]?sh$" . sh-mode))
+
 ;; YAML
 (autoload 'yaml-mode "yaml-mode")
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
