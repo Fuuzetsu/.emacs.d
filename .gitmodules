@@ -130,3 +130,6 @@
 [submodule "site-lisp/smooth-scrolling"]
 	path = site-lisp/smooth-scrolling
 	url = git@github.com:aspiers/smooth-scrolling.git
+[submodule "site-lisp/git-modes"]
+	path = site-lisp/git-modes
+	url = git@github.com:lunaryorn/git-modes.git

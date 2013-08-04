@@ -89,6 +89,10 @@
 (require 'setup-erc)
 (require 'setup-znc)
 
+;; has to be after magit
+(require 'git-commit-mode)
+(require 'gitconfig-mode)
+(require 'gitignore-mode)
 
 (when agda-mode-dir (require 'setup-agda))
 
