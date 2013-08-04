@@ -157,4 +157,12 @@
 ;; Use ibuffer instead of list-buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; rebind flycheck's C-c C-c to something more useful
+(require 'flycheck)
+(define-key flycheck-mode-map (kbd "C-c C-c") 'flycheck-compile)
+
+
+;; Text scaling
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
 (provide 'key-bindings)
