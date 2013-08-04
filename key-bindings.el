@@ -161,8 +161,17 @@
 (require 'flycheck)
 (define-key flycheck-mode-map (kbd "C-c C-c") 'flycheck-compile)
 
-
 ;; Text scaling
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)
+
+;; stop flyspell from hijacking my stuff
+(require 'flyspell)
+(define-key flyspell-mode-map (kbd "C-.") nil)
+(define-key flyspell-mode-map (kbd "C-,") nil)
+(define-key flyspell-mode-map (kbd "C-c s ,")
+  'flyspell-goto-next-error)
+(define-key flyspell-mode-map (kbd "C-c s .")
+  'flyspell-auto-correct-word)
+
 (provide 'key-bindings)
