@@ -31,11 +31,15 @@
             (expand-file-name (car dir))
           (progn (warn "Agda not found!") nil))))
 
+(setq geiser-mode-elisp-dir
+      (expand-file-name "geiser/elisp" site-lisp-dir))
+
 ;; Load path
 (add-to-list 'load-path user-emacs-directory) ;; top level
 (add-to-list 'load-path site-lisp-dir) ;; site-lisp, for local packages
 (add-to-list 'load-path ghc-mod-elisp-dir)
 (add-to-list 'load-path agda-mode-dir)
+(add-to-list 'load-path geiser-mode-elisp-dir)
 
 ;; Keep emacs Custom-settings in separate file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
@@ -139,6 +143,7 @@
 (require 'smart-forward)
 (require 'change-inner)
 (require 'multifiles)
+(require 'geiser)
 
 ;; Smart M-x is smart
 (require 'smex)
