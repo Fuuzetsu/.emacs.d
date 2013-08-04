@@ -180,5 +180,6 @@
 (global-set-key (kbd "C-c p c") (λ (persp-switch "config")))
 (global-set-key (kbd "C-c p e") (λ (persp-switch "erc")))
 (global-set-key (kbd "C-c p b") (λ (persp-switch "blog")))
+(global-set-key (kbd "C-c p y") (λ (persp-switch "yon-chan")))
 
 (provide 'key-bindings)
