@@ -17,6 +17,10 @@
                                (turn-on-haskell-indentation)
                                (turn-on-haskell-doc)))
 
+(add-hook 'inferior-haskell-mode-hook (lambda ()
+                                        (whitespace-mode -1)
+                                        (disable-paredit-mode)))
+
 (defun haskell-insert-type ()
   "Insert the type of the function on the previous line.
 You have to be be on the first line of the function.
