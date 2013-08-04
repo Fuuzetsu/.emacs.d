@@ -6,8 +6,10 @@
         paredit-forward-delete
         paredit-forward-kill-word
         repeat
+        sgml-slash
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        ghc-save-buffer
         ))
