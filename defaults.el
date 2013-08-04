@@ -77,4 +77,7 @@
 ;; Enable 'a' in dired
 (put 'dired-find-alternate-file 'disabled nil)
 
+;; Time logging in org-mode please
+(setq org-log-done 'time)
+
 (provide 'defaults)
