@@ -9,6 +9,10 @@
 ;; Nickname if we ever connect through ERC and not ZNC
 (setq erc-nick "Fuuzetsu-emacs")
 
+
+;; Highlight my original name as well
+(setq erc-pals '("Fuuzetsu"))
+
 ;; Interpret silly colours
 (setq erc-interpret-mirc-color t)
 

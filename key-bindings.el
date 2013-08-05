@@ -182,4 +182,8 @@
 (global-set-key (kbd "C-c p b") (λ (persp-switch "blog")))
 (global-set-key (kbd "C-c p y") (λ (persp-switch "yon-chan")))
 
+;; stop erc from hijacking my stuff
+(require 'erc)
+(define-key erc-mode-map (kbd "C-c C-e") nil)
+
 (provide 'key-bindings)
