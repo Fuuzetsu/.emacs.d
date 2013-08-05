@@ -4,14 +4,18 @@
 (setq mc/cmds-to-run-for-all
       '(
         org-beginning-of-line
+        org-delete-char
         org-self-insert-command
+        orgtbl-self-insert-command
         paredit-forward-delete
         paredit-forward-kill-word
         repeat
         sgml-slash
+        org-delete-char
         ))
 
 (setq mc/cmds-to-run-once
       '(
         ghc-save-buffer
+
         ))
