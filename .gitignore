@@ -5,3 +5,4 @@
 *.elc
 /.ercsettings.el
 /ac-comphist.dat
+/url/cookies
