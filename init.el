@@ -157,6 +157,10 @@
 (add-hook 'emacs-lisp-mode-hook
           (lambda () (elisp-slime-nav-mode t) (eldoc-mode 1)))
 
+;; free up TAB in term-mode
+(add-hook 'term-mode-hook (lambda()
+                (yas-minor-mode -1)))
+
 ;; Emacs server
 (require 'server)
 (unless (server-running-p)
