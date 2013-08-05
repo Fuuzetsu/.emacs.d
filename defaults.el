@@ -1,3 +1,6 @@
+;; e-mail address
+(setq user-mail-address "fuuzetsu@fuuzetsu.co.uk")
+
 ;; Allow pasting selection outside of Emacs
 (setq x-select-enable-clipboard t)
 
