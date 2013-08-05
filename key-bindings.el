@@ -187,5 +187,6 @@
 ;; stop erc from hijacking my stuff
 (require 'erc)
 (define-key erc-mode-map (kbd "C-c C-e") nil)
+(define-key erc-mode-map (kbd "C-c C-i") nil)
 
 (provide 'key-bindings)
