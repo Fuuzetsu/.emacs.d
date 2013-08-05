@@ -98,6 +98,8 @@
 (require 'gitconfig-mode)
 (require 'gitignore-mode)
 
+(require 'magit-gh-pulls)
+
 (when agda-mode-dir (require 'setup-agda))
 
 ;; Default setup of smartparens

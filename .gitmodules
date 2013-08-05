@@ -136,3 +136,18 @@
 [submodule "site-lisp/geiser"]
 	path = site-lisp/geiser
 	url = git://git.sv.gnu.org/geiser.git
+[submodule "site-lisp/magit-gh-pulls"]
+	path = site-lisp/magit-gh-pulls
+	url = git@github.com:sigma/magit-gh-pulls.git
+[submodule "site-lisp/gh.el"]
+	path = site-lisp/gh.el
+	url = git@github.com:sigma/gh.el.git
+[submodule "site-lisp/emacs-request"]
+	path = site-lisp/emacs-request
+	url = git@github.com:tkf/emacs-request.git
+[submodule "site-lisp/pcache"]
+	path = site-lisp/pcache
+	url = git@github.com:sigma/pcache.git
+[submodule "site-lisp/logito"]
+	path = site-lisp/logito
+	url = git@github.com:sigma/logito.git
