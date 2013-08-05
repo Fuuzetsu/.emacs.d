@@ -3,7 +3,7 @@
 # name: yon-chan new file
 # contributor: Mateusz Kowalczyk <fuuzetsu@fuuzetsu.co.uk>
 # --
-;; yon-$1.el --- ${1:$(capitalize yas-text)} functions for yon-chan
+;; yon-$1.el --- ${1:$(capitalize yas-text)} for yon-chan
 
 ;; Copyright (C) 2013  David Thompson
 ;;           (C) 2013  Mateusz Kowalczyk
@@ -26,7 +26,7 @@
 
 ;;; Commentary:
 
-;; This file contains various $1 functions used throughout yon-chan
+;; This file contains various $1 used throughout yon-chan
 
 ;;; Code:
 
