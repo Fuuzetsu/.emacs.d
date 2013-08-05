@@ -65,8 +65,10 @@
 ;; Jump to a definition in the current file. (This is awesome)
 (global-set-key (kbd "C-x C-i") 'ido-imenu)
 
-;; Should be able to eval-and-replace anywhere.
+;; Should be able to eval-and-replace/insert anywhere.
 (global-set-key (kbd "C-c C-e") 'eval-and-replace)
+(global-set-key (kbd "C-c C-i") 'eval-and-insert)
+
 
 ;; toggle two most recent buffers
 (fset 'quick-switch-buffer [?\C-x ?b return])
