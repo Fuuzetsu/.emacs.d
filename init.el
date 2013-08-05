@@ -98,7 +98,8 @@
 (require 'gitconfig-mode)
 (require 'gitignore-mode)
 
-(require 'magit-gh-pulls)
+;; don't load until I fix it
+;; (require 'magit-gh-pulls)
 
 (when agda-mode-dir (require 'setup-agda))
 
