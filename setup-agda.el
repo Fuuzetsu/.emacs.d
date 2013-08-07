@@ -3,7 +3,12 @@
 (require 'agda-input)
 
 (defadvice switch-to-buffer (after activate-input-method activate)
-  (activate-input-method "Agda"))
+  (with-current-buffer (buffer-name)
+    (if (boundp 'set-agda-before)
+        nil
+      (progn
+        (set (make-local-variable 'set-agda-before) t)
+        (activate-input-method "Agda")))))
 
 (setq agda2-include-dirs
       (let ((dir (expand-file-name "~/agdalib/src")))
