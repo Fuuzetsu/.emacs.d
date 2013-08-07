@@ -13,7 +13,7 @@
 
 (add-hook 'haskell-mode-hook (lambda ()
                                (ghc-init)
-                               (flycheck-mode)
+                               ;; (flycheck-mode)
                                (turn-on-haskell-indentation)
                                (turn-on-haskell-doc)))
 
