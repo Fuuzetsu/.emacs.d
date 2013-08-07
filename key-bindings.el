@@ -183,6 +183,8 @@
 (global-set-key (kbd "C-c p e") (λ (persp-switch "erc")))
 (global-set-key (kbd "C-c p b") (λ (persp-switch "blog")))
 (global-set-key (kbd "C-c p y") (λ (persp-switch "yon-chan")))
+(global-set-key (kbd "C-c p t") (λ (persp-switch "tmp")))
+(global-set-key (kbd "C-c p m") (λ (persp-switch "main")))
 
 ;; stop erc from hijacking my stuff
 (require 'erc)
