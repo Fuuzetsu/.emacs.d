@@ -14,8 +14,8 @@
   (when (file-directory-p path)
     (add-to-list 'custom-theme-load-path path)))
 
-;; Go with solarized for now
-(load-theme 'solarized-dark)
+;; theme
+(load-theme 'subatomic-enhanced)
 
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
