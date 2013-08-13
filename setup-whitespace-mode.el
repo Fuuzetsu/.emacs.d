@@ -1,6 +1,6 @@
 ;; make whitespace-mode use just basic coloring
 (setq whitespace-style '(face indentation::space space-before-tab::space
-                         trailing tab-mark spaces tabs newline tab-mark
+                         trailing tab-mark tabs newline tab-mark
                          lines-tail))
 
 ;; clean up buffer before saving it
