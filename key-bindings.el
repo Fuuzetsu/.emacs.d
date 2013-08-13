@@ -193,4 +193,8 @@
 (define-key erc-mode-map (kbd "C-c C-e") nil)
 (define-key erc-mode-map (kbd "C-c C-i") nil)
 
+;; Dedicated key for expand, when auto-complete gets in the way
+(require' yasnippet)
+(global-set-key (kbd "<C-tab>") 'yas-expand)
+
 (provide 'key-bindings)
