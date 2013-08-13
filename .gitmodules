@@ -151,3 +151,6 @@
 [submodule "site-lisp/logito"]
 	path = site-lisp/logito
 	url = git@github.com:sigma/logito.git
+[submodule "themes/Subatomic-enhanced"]
+	path = themes/Subatomic-enhanced
+	url = git@github.com:shahinism/Subatomic-enhanced.git
