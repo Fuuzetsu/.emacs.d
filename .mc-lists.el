@@ -13,6 +13,7 @@
         orgtbl-self-insert-command
         paredit-forward-delete
         paredit-forward-kill-word
+        python-indent-electric-colon
         repeat
         sgml-slash
         yas-expand
