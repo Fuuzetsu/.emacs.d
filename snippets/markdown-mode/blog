@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# key: blogpost
+# name: blog post template
+# contributor: Mateusz Kowalczyk <fuuzetsu@fuuzetsu.co.uk>
+# --
+---
+date:   `(insert-date)`
+title:  `(s-capitalize (s-chop-suffix ".markdown" (s-join " " (cdddr (split-string (buffer-name) "-")))))`
+author: Fūzetsu
+---
+
+$0
