@@ -146,6 +146,15 @@
   (with-current-buffer (htmlize-buffer buffer)
     (buffer-string)))
 
+(defun insert-date ()
+  (interactive)
+  (insert
+   (substring ;; kill newline
+    (with-temp-buffer
+      (shell-command "date '+%Y-%m-%d %H:%M:%S'" (current-buffer))
+      (buffer-string))
+    0 -1)))
+
 (defun sudo-edit (&optional arg)
   (interactive "p")
   (if (or arg (not buffer-file-name))
