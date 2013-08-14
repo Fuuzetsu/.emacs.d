@@ -92,6 +92,7 @@
 (require 'setup-whitespace-mode)
 (require 'setup-erc)
 (require 'setup-znc)
+(require 'setup-tbemail)
 
 ;; has to be after magit
 (require 'git-commit-mode)
