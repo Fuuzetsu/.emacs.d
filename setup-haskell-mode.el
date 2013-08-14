@@ -13,7 +13,10 @@
 
 (add-hook 'haskell-mode-hook (lambda ()
                                (ghc-init)
-                               ;; (flycheck-mode)
+                               (flycheck-mode -1)
+                               (flymake-mode-off)
+                               (define-key haskell-mode-map (kbd "M-n") nil)
+                               (define-key haskell-mode-map (kbd "M-p") nil)
                                (turn-on-haskell-indentation)
                                (turn-on-haskell-doc)))
 
