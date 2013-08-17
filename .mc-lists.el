@@ -6,6 +6,7 @@
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
         kill-region-or-backward-word
+        markdown-exdent-or-delete
         org-beginning-of-line
         org-delete-char
         org-delete-char
