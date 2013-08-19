@@ -11,7 +11,9 @@
         org-delete-char
         org-delete-char
         org-self-insert-command
+        org-todo
         orgtbl-self-insert-command
+        outline-next-visible-heading
         paredit-forward-delete
         paredit-forward-kill-word
         python-indent-electric-colon
