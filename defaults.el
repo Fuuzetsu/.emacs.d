@@ -83,4 +83,10 @@
 ;; Time logging in org-mode please
 (setq org-log-done 'time)
 
+;; org-mode hooks here because we can be pretty sure we have org-mode
+(add-hook 'org-mode-hook (lambda ()
+                           (flyspell-mode)
+                           (auto-fill-mode)))
+
+
 (provide 'defaults)
