@@ -154,3 +154,6 @@
 [submodule "themes/Subatomic-enhanced"]
 	path = themes/Subatomic-enhanced
 	url = git@github.com:shahinism/Subatomic-enhanced.git
+[submodule "themes/el-monokai-theme"]
+	path = themes/el-monokai-theme
+	url = git@github.com:lvillani/el-monokai-theme.git
