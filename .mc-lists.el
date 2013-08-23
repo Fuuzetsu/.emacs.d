@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        ghc-sort-lines
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
         kill-region-or-backward-word
@@ -16,6 +17,8 @@
         outline-next-visible-heading
         paredit-forward-delete
         paredit-forward-kill-word
+        paredit-kill-region-or-backward-word
+        paredit-splice-sexp
         python-indent-electric-colon
         repeat
         sgml-slash
