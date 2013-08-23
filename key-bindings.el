@@ -195,4 +195,9 @@
 (require' yasnippet)
 (global-set-key (kbd "<M-tab>") 'yas-expand)
 
+;; I'm not sending mail in emacs anyway
+(global-unset-key (kbd "C-x m"))
+(global-set-key (kbd "C-x m") 'eshell)
+
+
 (provide 'key-bindings)
