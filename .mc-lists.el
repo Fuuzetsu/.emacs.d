@@ -6,6 +6,8 @@
         ghc-sort-lines
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
+        isearch-abort
+        jump-char-forward
         kill-region-or-backward-word
         markdown-exdent-or-delete
         org-beginning-of-line
