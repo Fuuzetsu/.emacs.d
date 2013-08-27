@@ -155,6 +155,15 @@
       (buffer-string))
     0 -1)))
 
+(defun insert-now-playing ()
+  (interactive)
+  (insert
+   (substring ;; kill newline
+    (with-temp-buffer
+      (shell-command "nowplaying.py" (current-buffer))
+      (buffer-string))
+    0 -1)))
+
 (defun sudo-edit (&optional arg)
   (interactive "p")
   (if (or arg (not buffer-file-name))
