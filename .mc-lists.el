@@ -24,6 +24,7 @@
         python-indent-electric-colon
         repeat
         sgml-slash
+        toggle-input-method
         yas-expand
         ))
 
