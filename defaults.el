@@ -83,7 +83,8 @@
 ;; Time logging in org-mode please
 (setq org-log-done 'time)
 (setq org-src-fontify-natively t)
-
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "STARTED(s)" "WAITING(w)" "|" "DONE(d)" "CANCELED(c)")))
 ;; org-mode hooks here because we can be pretty sure we have org-mode
 (add-hook 'org-mode-hook (lambda ()
                            (flyspell-mode)
