@@ -160,3 +160,6 @@
 [submodule "site-lisp/f.el"]
 	path = site-lisp/f.el
 	url = git@github.com:rejeep/f.el.git
+[submodule "site-lisp/pkg-info.el"]
+	path = site-lisp/pkg-info.el
+	url = git@github.com:lunaryorn/pkg-info.el.git
