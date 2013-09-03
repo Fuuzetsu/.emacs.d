@@ -8,6 +8,8 @@
         haskell-indentation-delete-char
         isearch-abort
         jump-char-forward
+        jump-char-process-char
+        jump-char-repeat-backward
         kill-region-or-backward-word
         markdown-exdent-or-delete
         org-beginning-of-line
