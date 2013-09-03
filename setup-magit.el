@@ -1,5 +1,5 @@
 (require 'magit)
-(require 'rebase-mode)
+(require 'git-rebase-mode)
 
 ;; ;; Subtler highlight
 ;; (set-face-background 'magit-item-highlight "#121212")
