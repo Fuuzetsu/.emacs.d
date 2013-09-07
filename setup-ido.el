@@ -8,7 +8,7 @@
       ido-auto-merge-work-directories-length -1 ; no auto merging work dirs
       ido-create-new-buffer 'always ; always create new buffer if no match
       ido-use-filename-at-point nil ; don't look at text at point as a filename
-      ido-max-prospects 10) 
+      ido-max-prospects 10)
 
 ;; Try out flx-ido for better flex matching between words
 (require 'flx-ido) ;; fuzzy matching
@@ -57,6 +57,7 @@
 
 ;; Use ido everywhere
 (require 'ido-ubiquitous)
+(ido-everywhere 1)
 (ido-ubiquitous-mode 1)
 
 ;; Fix ido-ubiquitous for newer packages
