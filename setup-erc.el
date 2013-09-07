@@ -32,17 +32,6 @@
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT" "MODE"
                                 "324" "329" "332" "333" "353" "477"))
 
-;; (setq erc-format-query-as-channel-p t
-;;       erc-track-priority-faces-only 'all
-;;       erc-track-faces-priority-list '(erc-error-face
-;;                                       erc-current-nick-face
-;;                                       erc-keyword-face
-;;                                       erc-nick-msg-face
-;;                                       erc-direct-msg-face
-;;                                       erc-dangerous-host-face
-;;                                       erc-notice-face
-;;                                       erc-prompt-face))
-
 ;; Clear out the modeline
 (defun reset-erc-track-mode ()
   (interactive)
