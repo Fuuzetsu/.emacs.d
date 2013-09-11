@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# key: header
+# name: Haskell module header
+# contributor: Mateusz Kowalczyk <fuuzetsu@fuuzetsu.co.uk>
+# --
+-- |
+-- Module      :  $1
+-- Description :  $2
+-- Copyright   :  (c) Mateusz Kowalczyk 2013
+`(insert-license)`-- Maintainer  :  fuuzetsu@fuuzetsu.co.uk
+-- Stability   :  experimental
+
+$0

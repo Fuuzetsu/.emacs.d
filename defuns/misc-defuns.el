@@ -155,6 +155,21 @@
       (buffer-string))
     0 -1)))
 
+
+(defun insert-license ()
+  (interactive)
+  (let* ((f (haskell-cabal-find-file))
+         (l (with-temp-buffer
+              (if f
+                  (progn
+                    (shell-command (concat "cat " f "| grep -i 'license:' | cut -d ':' -f 2 | sed s/\\ //g")
+                                   (current-buffer))
+                    (buffer-string))
+                nil))))
+    (if l
+        (insert (concat "-- License     :  " l))
+      nil)))
+
 (defun insert-now-playing ()
   (interactive)
   (insert
