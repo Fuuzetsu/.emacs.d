@@ -185,6 +185,8 @@
 (global-set-key (kbd "C-c p y") (λ (persp-switch "yon-chan")))
 (global-set-key (kbd "C-c p t") (λ (persp-switch "tmp")))
 (global-set-key (kbd "C-c p m") (λ (persp-switch "main")))
+(global-set-key (kbd "C-c p a") (λ (persp-switch "agscheme")))
+(global-set-key (kbd "C-c p d") (λ (persp-switch "dev")))
 
 ;; stop erc from hijacking my stuff
 (require 'erc)
