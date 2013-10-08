@@ -7,11 +7,13 @@
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
         isearch-abort
+        jump-char-backward
         jump-char-forward
         jump-char-process-char
         jump-char-repeat-backward
         kill-region-or-backward-word
         markdown-exdent-or-delete
+        nxml-electric-slash
         org-beginning-of-line
         org-delete-char
         org-delete-char
@@ -21,6 +23,7 @@
         outline-next-visible-heading
         paredit-forward-delete
         paredit-forward-kill-word
+        paredit-kill
         paredit-kill-region-or-backward-word
         paredit-splice-sexp
         python-indent-electric-colon
