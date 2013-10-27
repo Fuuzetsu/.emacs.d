@@ -3,6 +3,7 @@
 
 ;; Smart M-x
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "M-x") 'smex)
 
 ;; Expand region (increases selected region by semantic units)
 (global-set-key (kbd "C-S-r") 'er/expand-region)
