@@ -163,3 +163,6 @@
 [submodule "site-lisp/pkg-info.el"]
 	path = site-lisp/pkg-info.el
 	url = git@github.com:lunaryorn/pkg-info.el.git
+[submodule "site-lisp/epl"]
+	path = site-lisp/epl
+	url = git@github.com:cask/epl.git
