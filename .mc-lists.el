@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
         c-electric-delete-forward
+        c-electric-lt-gt
         c-electric-paren
         ghc-sort-lines
         haskell-indentation-delete-backward-char
