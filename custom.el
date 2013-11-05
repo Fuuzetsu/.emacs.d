@@ -5,7 +5,6 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCCC"])
  '(compilation-message-face (quote default))
- '(custom-enabled-themes (quote (monokai)))
  '(custom-safe-themes (quote ("54266114287ef8abeda6a3df605deffe777957ba994750da6b8595fe90e932f0" "1ac9a474d289e6a44894d1b484b3aa5eb345cea6ed6f32ec5214c797ac7ddf23" "f3ec2da81c2b1f66f911fe47843a09055754b40fafaddcce79bbd4d781161329" "68769179097d800e415631967544f8b2001dae07972939446e21438b1010748c" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "5bff694d9bd3791807c205d8adf96817ee1e572654f6ddc5e1e58b0488369f9d" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(fci-rule-color "#383838")
  '(haskell-interactive-mode-eval-pretty t)
