@@ -27,8 +27,8 @@
 (setq erc-query-display 'buffer)
 
 ;; exclude boring stuff from tracking
-(erc-track-mode t)
-(erc-track-minor-mode -1) ;; No thanks
+(setq erc-track-mode t)
+(setq erc-track-minor-mode nil) ;; No thanks
 (setq erc-track-exclude-types '("JOIN" "NICK" "PART" "QUIT" "MODE"
                                 "324" "329" "332" "333" "353" "477"))
 
