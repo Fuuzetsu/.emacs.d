@@ -20,6 +20,7 @@
         org-beginning-of-line
         org-delete-char
         org-delete-char
+        org-end-of-line
         org-self-insert-command
         org-todo
         orgtbl-self-insert-command
