@@ -10,6 +10,7 @@
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
         isearch-abort
+        ispell-minor-check
         jump-char-backward
         jump-char-forward
         jump-char-process-char
