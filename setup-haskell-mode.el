@@ -19,7 +19,8 @@
                                (define-key haskell-mode-map (kbd "M-n") nil)
                                (define-key haskell-mode-map (kbd "M-p") nil)
                                (turn-on-haskell-indentation)
-                               (turn-on-haskell-doc)))
+                               (turn-on-haskell-doc)
+                               (hs-minor-mode)))
 
 (add-hook 'inferior-haskell-mode-hook (lambda ()
                                         (whitespace-mode -1)
