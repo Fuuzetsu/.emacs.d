@@ -6,6 +6,7 @@
 
 (require 'haskell-mode-autoloads)
 (require 'ghc)
+(require 'hs-lint)
 
 ;;; Code:
 
