@@ -6,6 +6,7 @@
         c-electric-delete-forward
         c-electric-lt-gt
         c-electric-paren
+        c-electric-star
         ghc-sort-lines
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
@@ -42,4 +43,5 @@
       '(
         describe-key-briefly
         ghc-save-buffer
+        inferior-haskell-load-file
         ))
