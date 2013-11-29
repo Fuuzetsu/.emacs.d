@@ -171,4 +171,4 @@
 	url = https://github.com/pinard/Pymacs.git
 [submodule "site-lisp/ropemacs"]
 	path = site-lisp/ropemacs
-	url = ./site-lisp/ropemacs
+        url = git@github.com:vedang/Ropemacs.git
