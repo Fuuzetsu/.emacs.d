@@ -166,9 +166,3 @@
 [submodule "site-lisp/epl"]
 	path = site-lisp/epl
 	url = git@github.com:cask/epl.git
-[submodule "site-lisp/Pymacs"]
-	path = site-lisp/Pymacs
-	url = https://github.com/pinard/Pymacs.git
-[submodule "site-lisp/ropemacs"]
-	path = site-lisp/ropemacs
-        url = git@github.com:vedang/Ropemacs.git
