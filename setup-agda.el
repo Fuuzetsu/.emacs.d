@@ -2,6 +2,9 @@
 (require 'agda2)
 (require 'agda-input)
 
+(defadvice agda2-mode (after turn-off-erc-track-minor-mode activate)
+  (erc-track-minor-mode -1))
+
 (defadvice switch-to-buffer (after activate-input-method activate)
   (with-current-buffer (buffer-name)
     (if (boundp 'set-agda-before)
