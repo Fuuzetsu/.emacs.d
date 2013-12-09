@@ -44,4 +44,5 @@
         describe-key-briefly
         ghc-save-buffer
         inferior-haskell-load-file
+        text-scale-decrease
         ))
