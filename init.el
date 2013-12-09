@@ -67,7 +67,7 @@
 (require 'guide-key)
 (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v"
                                      "C-x 8" "M-g" "C-x x"
-                                     "C-S-c"))
+                                     "C-S-c" "C-c"))
 (guide-key-mode 1)
 (setq guide-key/highlight-command-regexp "magit")
 (setq guide-key/recursive-key-sequence-flag t)
