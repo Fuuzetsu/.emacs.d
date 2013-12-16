@@ -10,6 +10,7 @@
         ghc-sort-lines
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
+        haskell-insert-type
         isearch-abort
         ispell-minor-check
         jump-char-backward
@@ -18,6 +19,7 @@
         jump-char-repeat-backward
         kill-region-or-backward-word
         markdown-exdent-or-delete
+        new-line-dwim
         nxml-electric-slash
         org-beginning-of-line
         org-delete-char
@@ -35,6 +37,8 @@
         python-indent-electric-colon
         repeat
         sgml-slash
+        smex
+        tex-terminate-paragraph
         toggle-input-method
         yas-expand
         ))
@@ -43,6 +47,7 @@
       '(
         describe-key-briefly
         ghc-save-buffer
+        haskell-hoogle
         inferior-haskell-load-file
         text-scale-decrease
         ))
