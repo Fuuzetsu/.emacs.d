@@ -29,11 +29,13 @@
         org-todo
         orgtbl-self-insert-command
         outline-next-visible-heading
+        paredit-doublequote
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-kill
         paredit-kill-region-or-backward-word
         paredit-splice-sexp
+        paredit-splice-sexp-killing-backward
         python-indent-electric-colon
         repeat
         sgml-slash
