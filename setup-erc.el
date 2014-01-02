@@ -65,4 +65,7 @@
 (defadvice switch-to-buffer (after other-window-now activate)
   (erc-track-minor-mode -1))
 
+; I don't think I'll miss much without these messages
+(setq erc-hide-list '("JOIN" "PART" "QUIT"))
+
 (provide 'setup-erc)
