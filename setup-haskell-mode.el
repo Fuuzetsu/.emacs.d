@@ -13,7 +13,7 @@
 (add-to-list 'Info-default-directory-list user-emacs-directory)
 
 (add-hook 'haskell-mode-hook (lambda ()
-                               (ghc-init)
+                               ; (ghc-init)
                                (flycheck-mode -1)
                                (flymake-mode-off)
                                (define-key haskell-mode-map (kbd "M-n") nil)
