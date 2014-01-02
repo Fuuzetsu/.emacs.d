@@ -61,4 +61,8 @@
 
 (add-hook 'erc-mode-hook (λ (whitespace-mode -1)))
 
+; fuck you fuck you fuck you fuck you fuck you fuck fuck fuck you track-minor
+(defadvice switch-to-buffer (after other-window-now activate)
+  (erc-track-minor-mode -1))
+
 (provide 'setup-erc)
