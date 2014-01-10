@@ -117,6 +117,7 @@
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 (eval-after-load 'haskell-mode '(require 'setup-haskell-mode))
 (eval-after-load 'python-mode '(require 'setup-python-mode))
+(require 'idris-mode)
 
 ;; Load stuff on demand
 (autoload 'flycheck-mode "setup-flycheck" nil t)

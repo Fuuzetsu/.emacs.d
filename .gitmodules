@@ -172,3 +172,6 @@
 [submodule "site-lisp/plantuml-mode"]
 	path = site-lisp/plantuml-mode
 	url = git@github.com:skuro/plantuml-mode.git
+[submodule "site-lisp/idris-mode"]
+	path = site-lisp/idris-mode
+	url = git@github.com:idris-hackers/idris-mode.git
