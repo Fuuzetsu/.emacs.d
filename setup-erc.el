@@ -68,4 +68,7 @@
 ; I don't think I'll miss much without these messages
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 
+; 30k is too small
+(setq erc-max-buffer-size 200000)
+
 (provide 'setup-erc)
