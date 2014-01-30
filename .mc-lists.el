@@ -47,6 +47,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+        agda2-load
         describe-key-briefly
         ghc-save-buffer
         haskell-hoogle
