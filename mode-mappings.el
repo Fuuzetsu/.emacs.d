@@ -92,4 +92,11 @@
 (autoload 'plantuml-mode "plantuml-mode")
 (add-to-list 'auto-mode-alist '("\\.plantuml$"))
 
+;; OCaml
+(autoload 'tuareg-mode "tuareg")
+(autoload 'camldebug "camldebug" "Run the Caml debugger" t)
+(setq auto-mode-alist (append '(("\\.ml[ily]?$" . tuareg-mode)
+                                ("\\.topml$" . tuareg-mode))
+                              auto-mode-alist))
+
 (provide 'mode-mappings)

@@ -175,3 +175,6 @@
 [submodule "site-lisp/idris-mode"]
 	path = site-lisp/idris-mode
 	url = git@github.com:idris-hackers/idris-mode.git
+[submodule "site-lisp/tuareg"]
+	path = site-lisp/tuareg
+	url = git@github.com:emacsmirror/tuareg.git
