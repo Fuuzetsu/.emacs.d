@@ -3,9 +3,11 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-colon
         c-electric-delete-forward
         c-electric-lt-gt
         c-electric-paren
+        c-electric-semi&comma
         c-electric-star
         ghc-sort-lines
         haskell-indentation-delete-backward-char
@@ -52,5 +54,6 @@
         ghc-save-buffer
         haskell-hoogle
         inferior-haskell-load-file
+        kbd-macro-query
         text-scale-decrease
         ))
