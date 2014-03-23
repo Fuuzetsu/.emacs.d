@@ -21,4 +21,10 @@
             (warn (concat "Didn't find Agda libraries at " dir))
             (setq agda2-include-dirs '("."))))))
 
+(put 'erc-remove-text-properties-region 'disabled nil)
+
+(load-file (let ((coding-system-for-read 'utf-8))
+             (shell-command-to-string "agda-mode locate")))
+
+
 (provide 'setup-agda)
