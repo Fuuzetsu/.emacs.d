@@ -15,6 +15,7 @@
         haskell-insert-type
         isearch-abort
         ispell-minor-check
+        jde-kill-camel-tok
         jump-char-backward
         jump-char-forward
         jump-char-process-char
