@@ -24,12 +24,7 @@
       (expand-file-name "ghc-mod/elisp" site-lisp-dir))
 
 (setq agda-mode-dir
-      (let ((dir (sort
-                  (file-expand-wildcards "~/.cabal/share/Agda*/emacs-mode")
-                  'string<))) ;; newest version you can find
-        (if dir
-            (expand-file-name (car dir))
-          (progn (warn "Agda not found!") nil))))
+      (file-name-directory (shell-command-to-string "agda-mode locate")))
 
 (setq geiser-mode-elisp-dir
       (expand-file-name "geiser/elisp" site-lisp-dir))
