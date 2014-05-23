@@ -14,7 +14,7 @@
         (activate-input-method "Agda")))))
 
 (setq agda2-include-dirs
-      (let ((dir (expand-file-name "~/agdalib/src")))
+      (let ((dir (expand-file-name "~/.nix-profile/share/agda")))
         (if (file-exists-p dir)
             (list "." dir)
           (progn
