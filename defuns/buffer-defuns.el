@@ -183,3 +183,7 @@ Including indent-buffer, which should not be called automatically on save."
          (files (mapcar 'car recent-files))
          (file (completing-read "Choose recent file: " files)))
     (find-file (cdr (assoc file recent-files)))))
+
+(defun search-all-buffers (regexp)
+  (interactive "sRegexp: ")
+  (multi-occur-in-matching-buffers "." regexp t))
