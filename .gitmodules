@@ -154,9 +154,6 @@
 [submodule "themes/Subatomic-enhanced"]
 	path = themes/Subatomic-enhanced
 	url = git@github.com:shahinism/Subatomic-enhanced.git
-[submodule "themes/el-monokai-theme"]
-	path = themes/el-monokai-theme
-	url = git@github.com:lvillani/el-monokai-theme.git
 [submodule "site-lisp/f.el"]
 	path = site-lisp/f.el
 	url = git@github.com:rejeep/f.el.git
@@ -178,3 +175,6 @@
 [submodule "site-lisp/tuareg"]
 	path = site-lisp/tuareg
 	url = git@github.com:emacsmirror/tuareg.git
+[submodule "themes/monokai-emacs"]
+	path = themes/monokai-emacs
+	url = https://github.com/oneKelvinSmith/monokai-emacs

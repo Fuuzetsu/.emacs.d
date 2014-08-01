@@ -15,7 +15,7 @@
     (add-to-list 'custom-theme-load-path path)))
 
 ;; theme
-(load-theme 'monokai)
+(load-theme 'monokai t)
 
 ;; Highlight matching parentheses when the point is on them.
 (show-paren-mode 1)
