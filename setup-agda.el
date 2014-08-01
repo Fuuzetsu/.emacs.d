@@ -16,7 +16,7 @@
 (setq agda2-include-dirs
       (let ((dir (expand-file-name "~/.nix-profile/share/agda")))
         (if (file-exists-p dir)
-            (list "." dir)
+            (list "." (expand-file-name "~/programming/categories") dir)
           (progn
             (warn (concat "Didn't find Agda libraries at " dir))
             (setq agda2-include-dirs '("."))))))
