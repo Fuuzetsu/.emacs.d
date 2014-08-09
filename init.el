@@ -115,7 +115,9 @@
 (require 'idris-mode)
 
 ;; Load stuff on demand
-(autoload 'flycheck-mode "setup-flycheck" nil t)
+;; (autoload 'flycheck-mode "setup-flycheck" nil t)
+;; (eval-after-load 'flycheck
+;;   '(require 'flycheck-hdevtools))
 
 ;; Auto-completion is sick!
 (require 'auto-complete)

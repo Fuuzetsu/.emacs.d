@@ -178,3 +178,6 @@
 [submodule "themes/monokai-emacs"]
 	path = themes/monokai-emacs
 	url = https://github.com/oneKelvinSmith/monokai-emacs
+[submodule "site-lisp/flycheck-hdevtools"]
+	path = site-lisp/flycheck-hdevtools
+	url = git@github.com:flycheck/flycheck-hdevtools.git
