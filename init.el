@@ -23,6 +23,7 @@
 (setq ghc-mod-elisp-dir
       (expand-file-name "ghc-mod/elisp" site-lisp-dir))
 
+
 (setq agda-mode-dir
       (file-name-directory (shell-command-to-string "agda-mode locate")))
 
@@ -93,6 +94,8 @@
 (require 'git-commit-mode)
 (require 'gitconfig-mode)
 (require 'gitignore-mode)
+
+(require 'nix-mode)
 
 ;; don't load until I fix it
 ;; (require 'magit-gh-pulls)
