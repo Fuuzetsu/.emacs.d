@@ -25,6 +25,9 @@
   (tooltip-mode -1)
   (blink-cursor-mode -1))
 
+;; Stop the theme from switching with magit as explained at magit/magit#1431
+(remove-hook 'server-visit-hook 'create-monokai-theme)
+
 ;; Unclutter the modeline
 (require 'diminish)
 (eval-after-load "yasnippet" '(diminish 'yas-minor-mode))
