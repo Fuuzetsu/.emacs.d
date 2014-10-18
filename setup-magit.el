@@ -1,6 +1,11 @@
 (require 'magit)
 (require 'git-rebase-mode)
 
+(set-default 'magit-stage-all-confirm nil)
+(set-default 'magit-unstage-all-confirm nil)
+(set-default 'magit-log-show-gpg-status t)
+(set-default 'magit-log-auto-more t)
+
 ;; ;; Subtler highlight
 (set-face-background 'magit-item-highlight "#121212")
 (set-face-background 'diff-file-header "#121212")
