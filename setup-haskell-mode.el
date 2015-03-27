@@ -7,25 +7,34 @@
 (require 'haskell-mode-autoloads)
 (require 'ghc)
 (require 'hs-lint)
+(require 'inf-haskell)
 
 ;;; Code:
 
 (add-to-list 'Info-default-directory-list user-emacs-directory)
 
-(add-hook 'haskell-mode-hook (lambda ()
-                               ; (ghc-init)
-                               (flycheck-mode -1)
-                               (flymake-mode-off)
-                               (define-key haskell-mode-map (kbd "M-n") nil)
-                               (define-key haskell-mode-map (kbd "M-p") nil)
-                               (turn-on-haskell-indentation)
-                               (turn-on-haskell-doc)
-                               (hs-minor-mode)))
+(setq haskell-mode-hook nil)
+(add-hook 'haskell-mode-hook
+          (lambda ()
+                                        ; (ghc-init)
+            (flycheck-mode -1)
+            (flymake-mode-off)
+            (define-key haskell-mode-map (kbd "M-n") nil)
+            (define-key haskell-mode-map (kbd "M-p") nil)
+            (define-key haskell-mode-map (kbd "C-c C-l")
+              'inferior-haskell-load-file)
+            (turn-on-haskell-indentation)
+            (turn-on-haskell-doc)
+                                        ;(haskell-interactive-mode)
+            (hs-minor-mode)))
+(add-hook 'haskell-mode-hook 'inf-haskell-mode)
+(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
 
 (add-hook 'inferior-haskell-mode-hook (lambda ()
                                         (whitespace-mode -1)
                                         (disable-paredit-mode)
                                         (turn-off-show-smartparens-mode)))
+(setq haskell-proces-type 'ghci)
 
 (defun haskell-insert-type ()
   "Insert the type of the function on the previous line.
