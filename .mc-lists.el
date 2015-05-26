@@ -9,6 +9,7 @@
         c-electric-paren
         c-electric-semi&comma
         c-electric-star
+        erc-bol
         ghc-sort-lines
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
