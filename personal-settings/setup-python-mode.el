@@ -6,7 +6,7 @@
 ;;; Code:
 
 ;; (require 'ipython)
-;; (require 'python-mode)
+(require 'python-mode)
 
 ;; (add-to-list 'Info-default-directory-list user-emacs-directory)
 
@@ -18,6 +18,9 @@
 ;;       "from IPython.core.completerlib import module_completion"
 ;;       python-shell-completion-string-code "';'.join(__IP.complete('''%s'''))\n"
 ;;       python-shell-completion-module-string-code "")
+
+(add-to-list 'auto-mode-alist '("\\.bzl\\" . python-mode))
+(add-to-list 'auto-mode-alist '("BUILD" . python-mode))
 
 (provide 'setup-python-mode)
 

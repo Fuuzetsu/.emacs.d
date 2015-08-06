@@ -127,26 +127,6 @@
 ;; Find files by name and display results in dired
 (global-set-key (kbd "C-c f") 'find-name-dired)
 
-;; Find file in project, with specific patterns
-(global-unset-key (kbd "C-c C-o")) ;; which used to be delete-blank-lines (also bound to C-c C-<return>)
-(global-set-key (kbd "C-c C-o ja") (ffip-create-pattern-file-finder "*.java"))
-(global-set-key (kbd "C-c C-o js") (ffip-create-pattern-file-finder "*.js"))
-(global-set-key (kbd "C-c C-o ht") (ffip-create-pattern-file-finder "*.html"))
-(global-set-key (kbd "C-c C-o jp") (ffip-create-pattern-file-finder "*.jsp"))
-(global-set-key (kbd "C-c C-o cs") (ffip-create-pattern-file-finder "*.css"))
-(global-set-key (kbd "C-c C-o cl") (ffip-create-pattern-file-finder "*.clj"))
-(global-set-key (kbd "C-c C-o el") (ffip-create-pattern-file-finder "*.el"))
-(global-set-key (kbd "C-c C-o md") (ffip-create-pattern-file-finder "*.md"))
-(global-set-key (kbd "C-c C-o rb") (ffip-create-pattern-file-finder "*.rb"))
-(global-set-key (kbd "C-c C-o or") (ffip-create-pattern-file-finder "*.org"))
-(global-set-key (kbd "C-c C-o ph") (ffip-create-pattern-file-finder "*.php"))
-(global-set-key (kbd "C-c C-o tx") (ffip-create-pattern-file-finder "*.txt"))
-(global-set-key (kbd "C-c C-o vm") (ffip-create-pattern-file-finder "*.vm"))
-(global-set-key (kbd "C-c C-o xm") (ffip-create-pattern-file-finder "*.xml"))
-(global-set-key (kbd "C-c C-o pr") (ffip-create-pattern-file-finder "*.properties"))
-(global-set-key (kbd "C-c C-o in") (ffip-create-pattern-file-finder "*.ini"))
-(global-set-key (kbd "C-c C-o gr") (ffip-create-pattern-file-finder "*.groovy"))
-
 ;; View occurrence in occur mode
 (define-key occur-mode-map (kbd "v") 'occur-mode-display-occurrence)
 (define-key occur-mode-map (kbd "n") 'next-line)
@@ -159,10 +139,6 @@
 
 ;; Use ibuffer instead of list-buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-
-;; rebind flycheck's C-c C-c to something more useful
-(require 'flycheck)
-(define-key flycheck-mode-map (kbd "C-c C-c") 'flycheck-compile)
 
 ;; Text scaling
 (define-key global-map (kbd "C-+") 'text-scale-increase)

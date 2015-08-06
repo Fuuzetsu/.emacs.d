@@ -8,12 +8,16 @@
         c-electric-lt-gt
         c-electric-paren
         c-electric-semi&comma
+        c-electric-slash
         c-electric-star
         erc-bol
+        fill-paragraph
         ghc-sort-lines
+        haskell-indentation-common-electric-command
         haskell-indentation-delete-backward-char
         haskell-indentation-delete-char
         haskell-insert-type
+        indent-for-tab-command
         isearch-abort
         ispell-minor-check
         jde-kill-camel-tok
@@ -38,14 +42,17 @@
         paredit-forward-kill-word
         paredit-kill
         paredit-kill-region-or-backward-word
+        paredit-semicolon
         paredit-splice-sexp
         paredit-splice-sexp-killing-backward
         python-indent-electric-colon
         repeat
         sgml-slash
         smex
+        sp-remove-active-pair-overlay
         tex-terminate-paragraph
         toggle-input-method
+        yaml-electric-dash-and-dot
         yas-expand
         ))
 
@@ -54,9 +61,14 @@
         agda2-load
         beginning-of-buffer
         describe-key-briefly
+        electric-newline-and-maybe-indent
         ghc-save-buffer
         haskell-hoogle
+        ido-kill-buffer
         inferior-haskell-load-file
         kbd-macro-query
+        kill-rectangle
         text-scale-decrease
+        wgrep-finish-edit
+        yaml-electric-backspace
         ))

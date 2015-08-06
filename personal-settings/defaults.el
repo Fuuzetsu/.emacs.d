@@ -80,6 +80,9 @@
 ;; Enable 'a' in dired
 (put 'dired-find-alternate-file 'disabled nil)
 
+;; Case-insensitive searches
+(setq case-fold-search t)
+
 ;; Time logging in org-mode please
 (setq org-log-done 'time)
 (setq org-src-fontify-natively t)
@@ -89,6 +92,18 @@
 (add-hook 'org-mode-hook (lambda ()
                            (flyspell-mode)
                            (auto-fill-mode)))
+
+
+;; 2 spaces for groovy and JS
+(setq js-indent-level 2)
+(setq groovy-indent-offset 2)
+(setq python-indent-offset 2)
+
+;; 2 spaces in general
+(setq-default tab-width 2)
+
+;; Final newline everywhere
+(setq require-final-newline t)
 
 
 (provide 'defaults)

@@ -66,7 +66,8 @@
   (erc-track-minor-mode -1))
 
 ; I don't think I'll miss much without these messages
-(setq erc-hide-list '("JOIN" "PART" "QUIT"))
+;(setq erc-hide-list '("JOIN" "PART" "QUIT"))
+(setq erc-hide-list '())
 
 ; 30k is too small
 (setq erc-max-buffer-size 200000)

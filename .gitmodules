@@ -52,9 +52,6 @@
 [submodule "site-lisp/markdown-mode"]
 	path = site-lisp/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
-[submodule "site-lisp/flycheck"]
-	path = site-lisp/flycheck
-	url = git@github.com:lunaryorn/flycheck.git
 [submodule "site-lisp/yaml-mode"]
 	path = site-lisp/yaml-mode
 	url = git@github.com:yoshiki/yaml-mode.git
@@ -178,6 +175,36 @@
 [submodule "themes/monokai-emacs"]
 	path = themes/monokai-emacs
 	url = https://github.com/oneKelvinSmith/monokai-emacs
-[submodule "site-lisp/flycheck-hdevtools"]
-	path = site-lisp/flycheck-hdevtools
-	url = git@github.com:flycheck/flycheck-hdevtools.git
+[submodule "site-lisp/with-editor"]
+	path = site-lisp/with-editor
+	url = git@github.com:magit/with-editor.git
+[submodule "site-lisp/emacs-terraform-mode"]
+	path = site-lisp/emacs-terraform-mode
+	url = git@github.com:syohex/emacs-terraform-mode.git
+[submodule "site-lisp/emacs-hcl-mode"]
+	path = site-lisp/emacs-hcl-mode
+	url = https://github.com/syohex/emacs-hcl-mode
+[submodule "site-lisp/groovy-emacs-modes"]
+	path = site-lisp/groovy-emacs-modes
+	url = git@github.com:Groovy-Emacs-Modes/groovy-emacs-modes.git
+[submodule "site-lips/yaml-mode"]
+	path = site-lips/yaml-mode
+	url = git@github.com:yoshiki/yaml-mode.git
+[submodule "site-lips/memoize"]
+	path = site-lips/memoize
+	url = git@github.com:skeeto/emacs-memoize.git
+[submodule "site-lisp/memoize"]
+	path = site-lisp/memoize
+	url = git@github.com:skeeto/emacs-memoize.git
+[submodule "site-lisp/magit-popup"]
+	path = site-lisp/magit-popup
+	url = git@github.com:magit/magit-popup.git
+[submodule "site-lisp/ghub"]
+	path = site-lisp/ghub
+	url = git@github.com:magit/ghub.git
+[submodule "site-lisp/marshal.el"]
+	path = site-lisp/marshal.el
+	url = https://github.com/sigma/marshal.el.git
+[submodule "site-lisp/use-package"]
+	path = site-lisp/use-package
+	url = git@github.com:jwiegley/use-package.git

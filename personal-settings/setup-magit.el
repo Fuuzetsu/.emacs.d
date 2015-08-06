@@ -1,5 +1,5 @@
 (require 'magit)
-(require 'git-rebase-mode)
+;(require 'git-rebase-mode)
 
 (set-default 'magit-stage-all-confirm nil)
 (set-default 'magit-unstage-all-confirm nil)
@@ -7,7 +7,7 @@
 (set-default 'magit-log-auto-more t)
 
 ;; ;; Subtler highlight
-(set-face-background 'magit-item-highlight "#121212")
+;(set-face-background 'magit-item-highlight "#121212")
 (set-face-background 'diff-file-header "#121212")
 (set-face-foreground 'diff-context "#666666")
 ;; (set-face-foreground 'diff-added "#00cc33")

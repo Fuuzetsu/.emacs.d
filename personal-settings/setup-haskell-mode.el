@@ -4,9 +4,6 @@
 ;; Some haskell-mode tweaks. Defines few more functions to ease up
 ;; work with the mode
 
-(require 'haskell-mode-autoloads)
-(require 'ghc)
-(require 'hs-lint)
 (require 'inf-haskell)
 
 ;;; Code:
@@ -16,25 +13,24 @@
 (setq haskell-mode-hook nil)
 (add-hook 'haskell-mode-hook
           (lambda ()
-                                        ; (ghc-init)
-            (flycheck-mode -1)
-            (flymake-mode-off)
             (define-key haskell-mode-map (kbd "M-n") nil)
             (define-key haskell-mode-map (kbd "M-p") nil)
             (define-key haskell-mode-map (kbd "C-c C-l")
               'inferior-haskell-load-file)
             (turn-on-haskell-indentation)
             (turn-on-haskell-doc)
-                                        ;(haskell-interactive-mode)
+            (setq tags-revert-without-query t)
             (hs-minor-mode)))
-(add-hook 'haskell-mode-hook 'inf-haskell-mode)
+; (add-hook 'haskell-mode-hook 'inf-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-indentation-mode)
+(add-hook 'haskell-mode-hook 'haskell-decl-scan-mode)
 
 (add-hook 'inferior-haskell-mode-hook (lambda ()
                                         (whitespace-mode -1)
                                         (disable-paredit-mode)
                                         (turn-off-show-smartparens-mode)))
 (setq haskell-proces-type 'ghci)
+(setq haskell-tags-on-save nil)
 
 (defun haskell-insert-type ()
   "Insert the type of the function on the previous line.
@@ -74,6 +70,9 @@ as well. Make sure you have loaded the file using `inferior-haskell-load-file'."
       (newline)
       (previous-line)
       (insert func-type))))
+
+(setenv "NIX_PATH" "nixpkgs=/home/shana/programming/nixpkgs")
+(setq haskell-program-name "nix-shell -A env --pure --command \"ghci -fdefer-type-errors\"")
 
 (provide 'setup-haskell-mode)
 

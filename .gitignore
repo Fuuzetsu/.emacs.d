@@ -3,9 +3,11 @@
 /elpa/archives/melpa/archive-contents
 \#*
 *.elc
-/.ercsettings.el
+personal-settings/.ercsettings.el
 /ac-comphist.dat
 /url/cookies
 /tramp
 .yas-compiled-snippets.el
 /image-dired/*
+elpa
+network-security.data

@@ -56,7 +56,7 @@
 (add-to-list 'ido-ignore-directories "node_modules")
 
 ;; Use ido everywhere
-(require 'ido-ubiquitous)
+(require 'ido-completing-read+)
 (ido-everywhere 1)
 (ido-ubiquitous-mode 1)
 
