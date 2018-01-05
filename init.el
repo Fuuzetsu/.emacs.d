@@ -38,6 +38,7 @@
 (use-package ido-vertical-mode :ensure t)
 (use-package ivy :ensure t)
 (use-package jump-char :ensure t)
+(use-package magit :ensure t)
 (use-package multiple-cursors :ensure t)
 (use-package nix-mode :ensure t)
 (use-package paredit :ensure t)
