@@ -11,3 +11,5 @@ personal-settings/.ercsettings.el
 /image-dired/*
 elpa
 network-security.data
+/ido.last
+/smex-items
