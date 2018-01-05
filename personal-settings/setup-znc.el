@@ -2,6 +2,7 @@
 (setq znc-detatch-on-kill t)
 
 ;; sets znc-servers with passwords to them too
-(load ".ercsettings.el")
+(if (file-exists-p ".ercsettings.el")
+    (load ".ercsettings.el"))
 
 (provide 'setup-znc)
