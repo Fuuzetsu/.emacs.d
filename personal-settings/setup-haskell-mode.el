@@ -24,6 +24,9 @@
 ; (add-hook 'haskell-mode-hook 'inf-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-indentation-mode)
 (add-hook 'haskell-mode-hook 'haskell-decl-scan-mode)
+(add-hook 'haskell-mode-hook 'flymake-hlint-load)
+(add-hook 'haskell-mode-hook 'flymake-cursor-mode)
+(add-hook 'haskell-mode-hook 'hlint-refactor-mode)
 
 (add-hook 'inferior-haskell-mode-hook (lambda ()
                                         (whitespace-mode -1)

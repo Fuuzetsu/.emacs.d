@@ -38,6 +38,7 @@
 (use-package ido-completing-read+ :ensure t)
 (use-package ido-vertical-mode :ensure t)
 (use-package ivy :ensure t)
+(use-package js2-mode :ensure t)
 (use-package jump-char :ensure t)
 (use-package magit :ensure t)
 (use-package markdown-mode :ensure t)
@@ -57,6 +58,9 @@
 (use-package yaml-mode :ensure t)
 (use-package yasnippet :ensure t)
 (use-package znc :ensure t)
+(use-package flymake-hlint :ensure t)
+(use-package hlint-refactor :ensure t)
+(use-package flymake-cursor :ensure t)
 
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))

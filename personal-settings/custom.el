@@ -11,6 +11,8 @@
     ("479eba125f9e97a0208b642a99eee1d816fa208fe3a06f73e444504beb0b17f7" "54266114287ef8abeda6a3df605deffe777957ba994750da6b8595fe90e932f0" "1ac9a474d289e6a44894d1b484b3aa5eb345cea6ed6f32ec5214c797ac7ddf23" "f3ec2da81c2b1f66f911fe47843a09055754b40fafaddcce79bbd4d781161329" "68769179097d800e415631967544f8b2001dae07972939446e21438b1010748c" "dd4db38519d2ad7eb9e2f30bc03fba61a7af49a185edfd44e020aa5345e3dca7" "5bff694d9bd3791807c205d8adf96817ee1e572654f6ddc5e1e58b0488369f9d" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(fci-rule-color "#383838")
  '(haskell-interactive-mode-eval-pretty t)
+ '(help-at-pt-display-when-idle (quote (flymake-overlay)) nil (help-at-pt))
+ '(help-at-pt-timer-delay 0)
  '(highlight-changes-colors (quote ("#d33682" "#6c71c4")))
  '(highlight-tail-colors
    (quote
@@ -27,7 +29,7 @@
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (elisp-slime-nav znc yasnippet yaml-mode with-editor wgrep visual-regexp terraform-mode smooth-scrolling smex smartparens smart-forward rainbow-delimiters perspective paredit nix-mode multiple-cursors jump-char ivy ido-vertical-mode ido-completing-read+ highlight-escape-sequences helm haskell-mode guide-key gitignore-mode gitconfig-mode flx-ido diminish change-inner bazel-mode auto-complete)))
+    (hlint-refactor flymake-cursor flymake-hlint elisp-slime-nav znc yasnippet yaml-mode with-editor wgrep visual-regexp terraform-mode smooth-scrolling smex smartparens smart-forward rainbow-delimiters perspective paredit nix-mode multiple-cursors jump-char ivy ido-vertical-mode ido-completing-read+ highlight-escape-sequences helm haskell-mode guide-key gitignore-mode gitconfig-mode flx-ido diminish change-inner bazel-mode auto-complete)))
  '(syslog-debug-face
    (quote
     ((t :background unspecified :foreground "#2aa198" :weight bold))))
@@ -67,7 +69,11 @@
  '(vc-annotate-very-old-color "#DC8CC3")
  '(weechat-color-list
    (quote
-    (unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83"))))
+    (unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83")))
+ '(znc-servers
+   (quote
+    (("fuuzetsu.co.uk" 7777 t
+      ((Fuzuetsu-Freenode "Fuuzetsu-Freenode" "kawaiiloli17")))))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

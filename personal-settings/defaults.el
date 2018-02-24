@@ -93,6 +93,10 @@
                            (flyspell-mode)
                            (auto-fill-mode)))
 
+;; Display help in minibuffer instantly
+(custom-set-variables
+ '(help-at-pt-timer-delay 0)
+ '(help-at-pt-display-when-idle '(flymake-overlay)))
 
 ;; 2 spaces for groovy and JS
 (setq js-indent-level 2)
